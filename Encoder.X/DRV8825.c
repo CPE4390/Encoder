@@ -6,7 +6,7 @@ void inline __delay(unsigned int d);
 void InitDRV8825(StepMode mode) {
     LATJ &= 0b1100000; //No step, direction = fwd, mode = full step, hold in reset
     TRISJ &= 0b11000000; //RJ0 - RJ5 outputs
-    TRISB |= 0b00000010; //RB1 input 
+    //TRISB |= 0b00000010; //RB1 input 
     __delay_us(1);
     LATJbits.LATJ5 = 1; //Release from reset
     __delay_us(1);

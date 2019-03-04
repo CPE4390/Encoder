@@ -15,7 +15,7 @@
 // RJ3 = M1  
 // RJ4 = M2
 // RJ5 = Reset //Optional
-// RB1 = Fault
+// RB1 = Fault //Unused
 // Sleep and Reset must be connected to 3V3
 
 #ifdef	__cplusplus
